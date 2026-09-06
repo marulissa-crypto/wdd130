@@ -1,0 +1,39 @@
+/* Limiting main width */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Specific selector for profile picture inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Aside container styling */
+aside {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Aside image styling */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Paragraph styling */
+p {
+    padding: 0;
+}
+
+/* Footer layout and separation */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
