@@ -1,4 +1,4 @@
-/* Navigation Rules (Required by Audit Tool) */
+/* Navigation Rules */
 nav {
     background-color: #333;
     padding: 0.5rem;
@@ -11,16 +11,26 @@ nav a {
     text-decoration: none;
 }
 
+/* Heading Styling */
+h1 {
+    color: #2c3e50;
+}
+
 /* Layout Rules */
 main {
     max-width: 840px;
 }
 
+/* Profile Image Styling inside Main */
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Aside Styling */
 aside {
     width: 20rem;
     margin: 1rem;
