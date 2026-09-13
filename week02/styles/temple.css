@@ -1,18 +1,57 @@
+/* Body & General Setup */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-header,
-footer {
-    background-color: #333;
-    color: white;
+/* Header Styling */
+header {
+    background-color: #2c3e50;
+    color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
-img {
+/* Main Layout & Temple Card */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.temple-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.temple-card h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.temple-card img {
     max-width: 100%;
     height: auto;
+    border-radius: 4px;
+}
+
+.temple-card p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    background-color: #eee;
 }
