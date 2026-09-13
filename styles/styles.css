@@ -1,34 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Restrict main width */
+main {
+    max-width: 840px;
 }
 
-/* Image float in main element */
+/* Specific styling for profile image inside main */
 main img {
-    float: right;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    width: 150px;
+    height: auto;
 }
 
-/* Relative positioning context for overlaying heading */
+/* Aside section styles */
 aside {
-    position: relative;
-    width: 20em;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+/* Specific styling for image inside aside */
+aside img {
+    width: 200px;
+    height: auto;
 }
 
-/* Class Selectors */
-.box {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 1rem;
-    background-color: #ddd;
-    color: #000;
+/* Remove padding from paragraphs */
+p {
+    padding: 0;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
 }
