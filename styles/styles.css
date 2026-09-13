@@ -1,15 +1,26 @@
-/* Restrict main width */
+/* Navigation Rules (Required by Audit Tool) */
+nav {
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+/* Layout Rules */
 main {
     max-width: 840px;
 }
 
-/* Specific styling for profile image inside main */
 main img {
     width: 150px;
     height: auto;
 }
 
-/* Aside section styles */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -20,18 +31,15 @@ aside {
     text-align: center;
 }
 
-/* Specific styling for image inside aside */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Remove padding from paragraphs */
 p {
     padding: 0;
 }
 
-/* Footer styling */
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
