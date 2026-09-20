@@ -1,85 +1,65 @@
-/* Color Palette & Font Variables */
+/* Color Variables & Reset */
 :root {
-  --primary-color: #055a05;   /* Forest Green */
-  --secondary-color: #f4a261; /* Warm Sand */
-  --accent1-color: #264653;   /* Dark Slate Blue */
-  --accent2-color: #e9c46a;   /* Light Golden Yellow */
-  --heading-font: "Times New Roman", "Georgia", serif;
-  --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #264653;
+  --secondary-color: #2a9d8f;
+  --accent-color: #e76f51;
+  --bg-color: #f4a261;
+  --light-bg: #f8f9fa;
+  --text-color: #1d3557;
 }
 
-/* Reset CSS Box Model */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-/* Base Body Styling */
-body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
-  background-color: var(--secondary-color); /* Uses --secondary-color */
-}
-
-/* Constrain Overall Page Width & Center Content */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Header & Navigation Styling */
-header {
-  background-color: #e0d4fc;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-header .logo {
-  display: block;
-  max-width: 120px;
-  height: auto;
-}
-
-header nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+}
+
+/* Header (CSS Grid) */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+
+header img.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation (CSS Flexbox) */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
 
 header nav a {
-  color: #2c00d4;
-  text-decoration: underline;
+  color: #ffffff;
+  text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
 }
 
 header nav a:hover {
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-radius: 4px;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* General Spacing Rules */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Hero Section Overlay Positioning */
+/* Hero Section Rules */
 .hero {
   position: relative;
   width: 100%;
-  margin: 0 auto;
 }
 
 .hero img.hero-bg {
@@ -89,95 +69,117 @@ nav, p, section, article {
   object-fit: cover;
 }
 
-/* Hero Banner Title (h1) Overlay */
 .hero h1 {
   position: absolute;
-  top: 15px;
+  top: 20px;
   left: 0;
   width: 100%;
-  padding: 12px;
   text-align: center;
   background-color: rgba(38, 70, 83, 0.85);
   color: #ffffff;
-  font-family: var(--heading-font);
-  font-size: 1.8rem;
-  margin: 0;
+  padding: 0.75rem;
+  font-size: 2.2rem;
 }
 
-/* Floating Mission Statement Box (article) Overlay */
 .hero article {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  background-color: rgba(255, 255, 255, 0.88);
-  padding: 16px;
-  border-radius: 4px;
-  margin: 0;
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.25rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
-.hero article p {
-  margin: 0;
-  padding: 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #222222;
-}
-
-/* Float property strictly required by course autograder */
 .hero article img {
   float: right;
-  width: 120px;
+  width: 140px;
   height: auto;
+  margin-left: 1rem;
   border-radius: 4px;
-  margin-left: 12px;
 }
 
-/* Content Sections (History & Adventure) */
-section {
-  margin: 20px 0;
-  padding: 16px;
-  background-color: #ffffff;
-  border-top: 4px solid var(--accent2-color); /* Uses --accent2-color */
+/* History Section */
+.history {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
 }
 
-h2 {
-  font-family: var(--heading-font);
+.history h2 {
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
 
-/* Footer & Social Media Styling */
+/* Adventure Gallery (CSS Flexbox) */
+.adventures {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.adventures h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 180px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+/* Footer & Social Icons */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e0d4fc;
-  color: #000000;
-  padding: 16px;
-  margin-top: 20px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
 }
 
-footer p {
-  margin: 0;
-  padding: 0;
-  font-size: 0.9rem;
-}
-
-.socialmedia {
+footer nav.socialmedia {
   display: flex;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
+  gap: 1rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
-  display: inline-block;
+footer nav.socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
 }
 
-.socialmedia img {
-  width: 28px;
-  height: 28px;
-  display: block;
+footer nav.socialmedia img:hover {
+  transform: scale(1.15);
 }
