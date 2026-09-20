@@ -173,10 +173,11 @@ footer p {
 
 .socialmedia a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .socialmedia img {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
   display: block;
 }
