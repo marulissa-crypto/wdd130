@@ -1,58 +1,73 @@
-/* Navigation Rules */
-nav {
-    background-color: #333;
-    padding: 0.5rem;
-}
-
-nav a {
-    color: #fff;
-    padding: 0.5rem 1rem;
-    display: block;
-    text-decoration: none;
-}
-
-/* Heading Styling */
-h1 {
-    color: #2c3e50;
-}
-
-/* Main Layout Rules */
-main {
+/* Container Width & Alignment */
+header,
+.grid,
+footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
-/* Profile Image Styling */
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Aside Styling */
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-/* General Elements */
-p {
+/* Base Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background-color: #f4f4f4;
+    margin: 0;
     padding: 0;
 }
 
+/* Heading 1 Bottom Border */
+h1 {
+    border-bottom: 2px solid steelblue;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Flexbox Navigation Bar */
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* CSS Grid Layout for Main Content */
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* Footer Styling */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: steelblue;
+    color: #ffffff;
 }
