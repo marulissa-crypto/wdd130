@@ -1,4 +1,31 @@
-/* Container Width & Alignment */
+/* ==========================================================================
+   WDD 130 Course Home Page Stylesheet
+   ========================================================================== */
+
+/* 1. Root Variables & Reset */
+:root {
+    --primary-color: steelblue;
+    --text-color: #222222;
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Global Typography & Base Body */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* 3. Layout Container Width & Centering */
 header,
 .grid,
 footer {
@@ -6,68 +33,126 @@ footer {
     margin: 0 auto;
 }
 
-/* Base Body Styling */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-/* Heading 1 Bottom Border */
+/* 4. Heading Hierarchy & Alignment */
 h1 {
-    border-bottom: 2px solid steelblue;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
-/* Flexbox Navigation Bar */
+h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 5. Navigation Bar (CSS Flexbox) */
 nav {
-    background-color: steelblue;
-    padding: 1rem;
+    background-color: var(--primary-color);
+    padding: 0.75rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 4px;
 }
 
 nav a {
     display: block;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
+    /* Meets WCAG AA Contrast 4.5:1 on steelblue */
+    transition: background-color 0.2s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
 }
 
-/* CSS Grid Layout for Main Content */
+/* 6. Main Content Area (CSS Grid) */
 .grid {
     display: grid;
-    align-items: center;
-}
-
-main {
-    grid-column: 2/3;
-    margin: 1rem;
+    align-items: start;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    width: 100%;
+    background-color: var(--card-bg);
+    padding: 1.25rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
-/* Footer Styling */
+aside img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    border-radius: 50%;
+}
+
+main {
+    background-color: var(--card-bg);
+    padding: 1.25rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    grid-column: 2 / 3;
+}
+
+main section {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* 7. Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
-    background-color: steelblue;
+    background-color: var(--primary-color);
     color: #ffffff;
+    border-radius: 4px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* 8. Responsive Design (Mobile Fallback) */
+@media (max-width: 650px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    main {
+        grid-column: 1 / -1;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
