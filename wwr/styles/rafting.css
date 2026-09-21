@@ -7,7 +7,7 @@
   --accent1-color: #264653;
   /* Dark Slate Blue */
   --accent2-color: #e9c46a;
-  /* Golden Yellow */
+  /* Light Golden Yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -42,6 +42,8 @@ header {
   align-items: center;
   padding: 16px;
   background-color: var(--primary-color);
+  border-bottom: 4px solid var(--secondary-color);
+  /* Uses --secondary-color */
 }
 
 header img {
@@ -63,6 +65,8 @@ header nav a {
 }
 
 header nav a:hover {
+  color: var(--accent2-color);
+  /* Uses --accent2-color */
   text-decoration: underline;
 }
 
@@ -70,7 +74,9 @@ header nav a:hover {
 h1,
 h2 {
   font-family: var(--heading-font);
+  /* Uses --heading-font */
   color: var(--primary-color);
+  /* Uses --primary-color */
 }
 
 /* General Content Spacing */
@@ -103,6 +109,7 @@ article {
   padding: 12px;
   text-align: center;
   background-color: rgba(38, 70, 83, 0.85);
+  /* Dark Slate Blue tone matching accent1 */
   color: #ffffff;
 }
 
@@ -115,6 +122,8 @@ article {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 16px;
   border-radius: 4px;
+  border: 1px solid var(--secondary-color);
+  /* Uses --secondary-color */
 }
 
 .hero article img {
@@ -143,6 +152,7 @@ footer {
   align-items: center;
   padding: 16px;
   background-color: var(--accent1-color);
+  /* Uses --accent1-color */
   color: #ffffff;
 }
 
