@@ -1,4 +1,63 @@
-/* Hero Container Overlay Rules */
+/* Universal Selector Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variables in :root */
+:root {
+  --primary-color: #264653;
+  --secondary-color: #2a9d8f;
+  --accent-color: #e76f51;
+  --bg-color: #f4a261;
+  --light-bg: #f8f9fa;
+  --text-color: #1d3557;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  line-height: 1.6;
+}
+
+/* Header (CSS Grid) */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+}
+
+header img.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation (CSS Flexbox) */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+header nav a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
@@ -13,27 +72,119 @@
 
 .hero h1 {
   position: absolute;
-  top: 15px;
+  top: 20px;
   left: 0;
   width: 100%;
-  padding: 12px;
   text-align: center;
   background-color: rgba(38, 70, 83, 0.85);
   color: #ffffff;
+  padding: 0.75rem;
+  font-size: 2.2rem;
 }
 
 .hero article {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  right: 15px;
-  background-color: rgba(255, 255, 255, 0.88);
-  padding: 16px;
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.25rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .hero article img {
   float: right;
-  width: 120px;
+  width: 140px;
   height: auto;
-  margin-left: 12px;
+  margin-left: 1rem;
+  border-radius: 4px;
+}
+
+/* History Section */
+.history {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.history h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* Adventure Gallery (CSS Flexbox) */
+.adventures {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.adventures h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 180px;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+/* Footer & Social Links */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+footer nav.socialmedia {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+footer nav.socialmedia img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease;
+}
+
+footer nav.socialmedia img:hover {
+  transform: scale(1.15);
 }
