@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* CSS Variables in :root - All 6 variables actively used */
+/* CSS Variables in :root - All variables used */
 :root {
   --primary-color: #264653;
   --secondary-color: #2a9d8f;
@@ -101,7 +101,7 @@ header nav a:hover {
   border-radius: 4px;
 }
 
-/* History Section (Section 1) */
+/* Section 1: History */
 .history {
   max-width: 900px;
   margin: 2rem auto;
@@ -115,7 +115,7 @@ header nav a:hover {
   font-size: 1.8rem;
 }
 
-/* Adventure Section (Section 2 with 5 Figures) */
+/* Section 2: Adventures */
 .adventures {
   max-width: 1100px;
   margin: 2rem auto;
