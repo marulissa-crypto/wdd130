@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* Base Body Styles */
 body {
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.6;
@@ -15,10 +16,10 @@ body {
     padding: 20px;
 }
 
-/* Header & Title Styling */
+/* Header & Title Layout */
 header h1 {
     font-size: 2.2rem;
-    color: #3b7a9e;
+    color: #2b6184;
     font-weight: bold;
     margin-bottom: 12px;
 }
@@ -27,7 +28,7 @@ header h1 span {
     font-weight: normal;
 }
 
-/* Navigation Links */
+/* Navigation Menu */
 header nav {
     display: flex;
     gap: 16px;
@@ -37,7 +38,7 @@ header nav {
 }
 
 header nav a {
-    color: #3b7a9e;
+    color: #2b6184;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
@@ -47,7 +48,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Content & Profile Image Layout */
+/* Main Intro Container & Floated Profile Image */
 main {
     clear: both;
 }
@@ -57,7 +58,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* Profile Image matching the sample design */
 .profile-img {
     float: right;
     width: 200px;
@@ -67,7 +67,7 @@ main {
     border: 1px solid #888888;
     padding: 3px;
     background-color: #ffffff;
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.35);
 }
 
 .intro-container p {
@@ -75,7 +75,7 @@ main {
     line-height: 1.7;
 }
 
-/* Aside & Flag Layout */
+/* Aside Section with Image Overlay */
 aside {
     position: relative;
     width: 280px;
@@ -93,7 +93,7 @@ aside h2 {
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.75);
     color: #ffffff;
     padding: 4px 10px;
     font-size: 1rem;
@@ -109,7 +109,7 @@ aside h2 {
     border-radius: 2px;
 }
 
-/* Temple List */
+/* Temple List Styles */
 ul.box {
     list-style-position: inside;
     font-family: Arial, sans-serif;
@@ -120,7 +120,7 @@ ul.box li {
 }
 
 ul.box a {
-    color: #3b7a9e;
+    color: #2b6184;
     text-decoration: none;
     font-weight: bold;
 }
@@ -129,7 +129,7 @@ ul.box a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
     margin-top: 30px;
     padding-top: 12px;
@@ -137,5 +137,5 @@ footer {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 0.9rem;
-    color: #666666;
+    color: #555555;
 }
