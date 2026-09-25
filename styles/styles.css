@@ -1,4 +1,4 @@
-//* Universal Reset */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
@@ -62,10 +62,10 @@ header nav a:hover {
     margin-bottom: 2rem;
 }
 
-/* Profile Image Floated Right with Border and Shadow */
+/* Profile Image Floated Right with Border, Shadow, and Adjusted Size */
 .profile-img {
     float: right;
-    width: 210px;
+    width: 140px;
     height: auto;
     margin-left: 20px;
     margin-bottom: 15px;
@@ -108,7 +108,6 @@ aside h2 {
     font-family: Arial, sans-serif;
 }
 
-/* Class Selectors */
 /* Class Selectors */
 .box {
     margin: 1.5rem 0;
