@@ -62,17 +62,17 @@ header nav a:hover {
     margin-bottom: 2rem;
 }
 
-/* Profile Image Floated Right with Border, Shadow, and Adjusted Size */
+/* Profile Image Floated Right - Set to 110px for a compact look */
 .profile-img {
     float: right;
-    width: 140px;
+    width: 110px;
     height: auto;
     margin-left: 20px;
     margin-bottom: 15px;
     border: 1px solid #d1d1d1;
-    padding: 4px;
+    padding: 3px;
     background-color: #ffffff;
-    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.35);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .intro-p {
