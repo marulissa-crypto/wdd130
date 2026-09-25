@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 130 Home Page | Magdalena Marura Mashengu</title>
+  <title>Magdalena Marura Mashengu | WDD 130</title>
   <meta name="description" content="WDD 130 Course Home Page for Magdalena Marura Mashengu.">
   <meta name="author" content="Magdalena Marura Mashengu">
   <link rel="stylesheet" href="styles.css">
@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <h1>Magdalena Marura Mashengu</h1>
+    <h1>Magdalena Marura Mashengu | <span>WDD 130</span></h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="wwr/index.html">Rafting Site</a>
@@ -22,15 +22,20 @@
   </header>
 
   <main>
-    <h1>Web Development Portfolio</h1>
-    <img src="images/profile.jpg" alt="Profile picture of Magdalena Marura Mashengu" width="200">
-    <p>Welcome to my home page. I am studying web development and working on HTML, CSS, and modern
-      web application building. Explore my projects and navigation links above to view my course
-      assignments.</p>
+    <div class="intro-container">
+      <img src="images/profile.jpg" alt="Profile picture of Magdalena Marura Mashengu"
+        class="profile-img">
+      <p>Hello! My name is Magdalena Marura Mashengu and I am studying web development. Welcome to
+        my WDD 130 portfolio home page. I am building responsive web pages using modern HTML, CSS,
+        grid, and flexbox layouts. Explore my projects and navigation links above to view my course
+        assignments.</p>
+    </div>
 
     <aside class="box">
-      <h2>Nairobi Kenya</h2>
-      <img src="images/kenya-flag.jpg" alt="Kenya Flag">
+      <h2>Nairobi, Kenya</h2>
+      <!-- Standard relative path; verify kenya-flag.jpg exists in your images folder -->
+      <img src="images/kenya-flag.jpg" alt="Flag of Kenya"
+        onerror="this.onerror=null; this.src='https://flagcdn.com/w320/ke.png';">
     </aside>
 
     <ul class="box">

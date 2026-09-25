@@ -1,36 +1,85 @@
-/* Universal Selector */
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, "Times New Roman", serif;
     line-height: 1.6;
-    color: #333333;
+    color: #222222;
+    background-color: #ffffff;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Main Layout & Profile Image Float */
+/* Header & Title Styling */
+header h1 {
+    font-size: 2.2rem;
+    color: #3b7a9e;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+header h1 span {
+    font-weight: normal;
+}
+
+/* Navigation Links */
+header nav {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 24px;
+}
+
+header nav a {
+    color: #3b7a9e;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content & Profile Image Layout */
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 10px;
+    clear: both;
 }
 
-main img {
+.intro-container {
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+/* Profile Image matching the sample design */
+.profile-img {
     float: right;
-    margin-left: 15px;
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
     margin-bottom: 15px;
-    border-radius: 4px;
+    border: 1px solid #888888;
+    padding: 3px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Aside Relative Positioning Container */
+.intro-container p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Aside & Flag Layout */
 aside {
     position: relative;
-    width: 100%;
-    max-width: 300px;
+    width: 280px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -40,31 +89,30 @@ aside img {
     display: block;
 }
 
-/* Heading Overlay on Aside Image */
 aside h2 {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.65);
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 1.1rem;
+    padding: 4px 10px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
 }
 
 /* Class Selectors */
 .box {
-    margin: 1rem 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
     padding: 1rem;
-    background-color: #f4f4f4;
-    color: #000000;
-    border-radius: 4px;
+    background-color: #f8f8f8;
+    border-radius: 2px;
 }
 
-/* Temple List Styling */
+/* Temple List */
 ul.box {
     list-style-position: inside;
+    font-family: Arial, sans-serif;
 }
 
 ul.box li {
@@ -72,11 +120,22 @@ ul.box li {
 }
 
 ul.box a {
-    color: #055a05;
+    color: #3b7a9e;
     text-decoration: none;
     font-weight: bold;
 }
 
 ul.box a:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-top: 12px;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666666;
 }
