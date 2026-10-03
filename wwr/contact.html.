@@ -118,10 +118,10 @@
   <footer>
     <p>&copy; 2026 Dry Oar Boating Company - Marura Mashengu. All rights reserved.</p>
     <nav class="socialmedia">
-      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
           alt="Facebook"></a>
-      <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png"
+      <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"
           alt="Instagram"></a>
     </nav>
   </footer>
