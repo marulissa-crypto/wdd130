@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - Dry Oar Boating Company</title>
   <meta name="description"
-    content="Contact Dry Oar Boating Company for whitewater rafting inquiries, reservations, and questions.">
-  <meta name="author" content="Marura">
+    content="Contact Dry Oar Boating Company for whitewater rafting inquiries, reservations, address, and team info.">
+  <meta name="author" content="Marura Mashengu">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -116,7 +116,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Dry Oar Boating Company - Marura. All rights reserved.</p>
+    <p>&copy; 2026 Dry Oar Boating Company - Marura Mashengu. All rights reserved.</p>
     <nav class="socialmedia">
       <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
           alt="Facebook"></a>
