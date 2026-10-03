@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dry Oar Boating Company</title>
+  <meta name="description"
+    content="Get in touch with Dry Oar Boating Company. Find our address, phone number, email, employee profiles, and a contact form for whitewater rafting inquiries or reservations.">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Dry Oar Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <!-- Company Information & Google Map Section -->
+    <div class="contact-grid">
+      <section class="company-info">
+        <h2>Company Information</h2>
+        <p><strong>Address:</strong> 123 Rapids Way, River City, UT 84043</p>
+        <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
+        <p><strong>Email:</strong> info@dryoarboating.com</p>
+      </section>
+
+      <section class="map">
+        <h2>Our Location</h2>
+        <!-- Google Map iframe (inline style="border:0" removed as instructed) -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2176394875727!2d-73.98823492346995!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </div>
+
+    <!-- Employee Profiles Section (At least 3 employees with titles) -->
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/employee1.jpg" alt="Sarah Connor - Lead Rafting Guide">
+          <figcaption>Sarah Connor<br><span>Lead Rafting Guide</span></figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="John Doe - Safety Coordinator">
+          <figcaption>John Doe<br><span>Safety Coordinator</span></figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Jane Smith - Reservation Manager">
+          <figcaption>Jane Smith<br><span>Reservation Manager</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>We would love to hear from you!</legend>
+
+          <div class="form-item">
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+
+          <div class="form-item">
+            <label for="useremail">Your Email:</label>
+            <input type="email" id="useremail" name="useremail" required>
+          </div>
+
+          <div class="form-item">
+            <label>Purpose of Message:</label>
+            <div class="radio-options">
+              <label><input type="radio" name="purpose" value="general" required> General
+                Inquiry</label>
+              <label><input type="radio" name="purpose" value="reservation"> Reservation
+                Question</label>
+              <label><input type="radio" name="purpose" value="suggestion"> Website
+                Suggestion</label>
+            </div>
+          </div>
+
+          <div class="form-item">
+            <label for="usermessage">Message:</label>
+            <textarea id="usermessage" name="usermessage" rows="4" required></textarea>
+          </div>
+
+          <div class="form-item checkbox-item">
+            <label>
+              <input type="checkbox" name="newsletter" value="subscribe"> Please subscribe me to the
+              monthly newsletter
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Dry Oar Boating Company. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
+          alt="Facebook"></a>
+      <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png"
+          alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
