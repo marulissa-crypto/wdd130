@@ -23,7 +23,7 @@
   </header>
 
   <main>
-    <h1>Contact Us</h1>
+    <h1>Contact Us - Dry Oar Boating Company</h1>
 
     <!-- Company Information & Google Map Section -->
     <div class="contact-grid">
@@ -36,7 +36,7 @@
 
       <section class="map">
         <h2>Our Location</h2>
-        <!-- Google Map iframe (inline border style removed) -->
+        <!-- Google Map iframe -->
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2176394875727!2d-73.98823492346995!3d40.74844097138558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
           width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
@@ -82,12 +82,18 @@
           <div class="form-item">
             <label>Purpose of Message:</label>
             <div class="radio-options">
-              <label><input type="radio" id="general" name="purpose" value="general" required>
-                General Inquiry</label>
-              <label><input type="radio" id="reservation" name="purpose" value="reservation">
-                Reservation Question</label>
-              <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website
-                Suggestion</label>
+              <label for="general">
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                General Inquiry
+              </label>
+              <label for="reservation">
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                Reservation Question
+              </label>
+              <label for="suggestion">
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                Website Suggestion
+              </label>
             </div>
           </div>
 
@@ -97,7 +103,7 @@
           </div>
 
           <div class="form-item checkbox-item">
-            <label>
+            <label for="newsletter">
               <input type="checkbox" id="newsletter" name="newsletter" value="subscribe"> Please
               subscribe me to the monthly newsletter
             </label>
@@ -110,12 +116,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2026 Dry Oar Boating Company. All rights reserved.</p>
+    <p>&copy; 2026 Dry Oar Boating Company - Marura. All rights reserved.</p>
     <nav class="socialmedia">
-      <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
+      <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
           alt="Facebook"></a>
-      <a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="Twitter"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"
+      <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" target="_blank"><img src="images/instagram.png"
           alt="Instagram"></a>
     </nav>
   </footer>
