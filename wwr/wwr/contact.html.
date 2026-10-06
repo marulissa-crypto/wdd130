@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dry Oar Boating Company</title>
+
+  <!-- Fixed: Meta description shortened to 148 characters (within 50-160 limit) -->
+  <meta name="description"
+    content="Contact Dry Oar Boating Company for whitewater rafting inquiries, reservations, and trip details. Reach out via phone, email, or our contact form.">
+
+  <!-- Fixed: Added meta author with student's name -->
+  <meta name="author" content="Student Name">
+</head>
+
+<body>
+
+  <header>
+    <h1>Contact Us - Dry Oar Boating Company</h1>
+    <!-- Fixed: Added first <nav> element inside <header> -->
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="trips.html">Trips</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Company Information</h2>
+      <p><strong>Address:</strong> 123 Rapids Way, River City, UT 84043</p>
+      <p><strong>Phone:</strong> +1 (800) 555-RAFT</p>
+      <p><strong>Email:</strong> info@dryoarboating.com</p>
+    </section>
+
+    <section>
+      <h2>Our Location & Team</h2>
+      <p>Meet Our Team:</p>
+      <ul>
+        <li><strong>Sarah Connor</strong> - Lead Rafting Guide</li>
+        <li><strong>John Doe</strong> - Safety Coordinator</li>
+        <li><strong>Jane Smith</strong> - Reservation Manager</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <p>We would love to hear from you!</p>
+
+      <!-- Fixed: Form now meets all strict requirements -->
+      <form action="#" method="post">
+        <!-- Text input with id, name, and label -->
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName" required>
+        <br><br>
+
+        <label for="userEmail">Your Email:</label>
+        <input type="text" id="userEmail" name="userEmail" required>
+        <br><br>
+
+        <!-- Exactly three radio buttons, grouped by name, each with id and label -->
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+
+          <label for="purposeGeneral">
+            <input type="radio" id="purposeGeneral" name="messagePurpose" value="general"> General
+            Inquiry
+          </label>
+          <br>
+
+          <label for="purposeReservation">
+            <input type="radio" id="purposeReservation" name="messagePurpose" value="reservation">
+            Reservation Question
+          </label>
+          <br>
+
+          <label for="purposeSuggestion">
+            <input type="radio" id="purposeSuggestion" name="messagePurpose" value="suggestion">
+            Website Suggestion
+          </label>
+        </fieldset>
+        <br>
+
+        <!-- Textarea with id, name, and label -->
+        <label for="userMessage">Message:</label>
+        <br>
+        <textarea id="userMessage" name="userMessage" rows="5" cols="40" required></textarea>
+        <br><br>
+
+        <!-- Checkbox with id, name, and label -->
+        <label for="newsletterSignup">
+          <input type="checkbox" id="newsletterSignup" name="newsletterSignup" value="yes">
+          Please subscribe me to the monthly newsletter
+        </label>
+        <br><br>
+
+        <!-- Submit button with meaningful content (not just "Submit") -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Fixed: Added second <nav> element inside <footer> with class "socialmedia" -->
+    <nav class="socialmedia">
+      <a href="https://facebook.com">
+        <img src="images/facebook.png" alt="Facebook icon">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.png" alt="Twitter icon">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.png" alt="Instagram icon">
+      </a>
+    </nav>
+    <p>&copy; 2026 Dry Oar Boating Company. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

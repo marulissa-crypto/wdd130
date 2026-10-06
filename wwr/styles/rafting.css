@@ -1,0 +1,699 @@
+/* --- Global Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* --- Header & Navigation Layout --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #457b9d;
+}
+
+/* --- Hero Section (Absolute Positioning) --- */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-msg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2.5rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 750px;
+}
+
+.hero-msg h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #f1faee;
+}
+
+.hero-msg p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Buttons & CTA --- */
+.cta-button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d90429;
+}
+
+/* --- Purpose / Grid Section --- */
+.purpose-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.purpose-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f1faee;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Newsletter Form Section --- */
+.newsletter-section {
+    background-color: #a8dadc;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-section p {
+    margin-bottom: 2rem;
+    color: #1d3557;
+}
+
+.newsletter-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.form-item {
+    margin-bottom: 1.25rem;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1d3557;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    width: 100%;
+    background-color: #1d3557;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #457b9d;
+}
+
+/* --- Footer --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    color: white;
+    padding: 1.5rem 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}/* --- About Page Specific Styles --- */
+.about-main {
+    background-color: #f9f9f9;
+    padding-bottom: 4rem;
+}
+
+.about-hero {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: #a8dadc;
+}
+
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.about-section h2 {
+    color: #1d3557;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.content-row {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.content-row p {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.content-row img {
+    flex: 1;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}/* --- Trips Page Layout --- */
+.trips-main {
+    padding-bottom: 4rem;
+    background-color: #f9f9f9;
+}
+
+.trips-cta-banner {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.trips-cta-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.trips-cta-banner p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #a8dadc;
+}
+
+.detailed-trips {
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.detailed-trips h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.trip-row {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.trip-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.trip-row img {
+    width: 45%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.trip-info {
+    width: 55%;
+}
+
+.trip-info h3 {
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+.trip-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Trip Table Section --- */
+.trip-table-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.trip-table-section h2 {
+    color: #1d3557;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trip-table caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.trip-table th, .trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: #1d3557;
+    color: white;
+}
+
+.trip-table tr:hover {
+    background-color: #f1faee;
+}/* --- Colorful Trips Page Styling --- */
+.trips-main {
+    background: linear-gradient(to bottom, #f0f4f8, #e2e8f0);
+    padding-bottom: 5rem;
+}
+
+.trips-cta-banner {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.trips-cta-banner h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #f1faee;
+}
+
+.trips-cta-banner p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: #a8dadc;
+}
+
+.cta-button {
+    background-color: #e63946;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d90429;
+}
+
+.detailed-trips {
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
+    padding: 0 1.5rem;
+}
+
+.detailed-trips h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+}
+
+.trip-row {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    margin-bottom: 2.5rem;
+    border-left: 6px solid #457b9d;
+    transition: transform 0.3s ease;
+}
+
+.trip-row:hover {
+    transform: translateY(-4px);
+}
+
+.trip-row.reverse {
+    flex-direction: row-reverse;
+    border-left: none;
+    border-right: 6px solid #e63946;
+}
+
+.trip-row img {
+    width: 45%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trip-info {
+    width: 55%;
+}
+
+.trip-info h3 {
+    color: #1d3557;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.trip-info p {
+    margin-bottom: 0.8rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Colorful Table --- */
+.trip-table-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+.trip-table-section h2 {
+    color: #1d3557;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.trip-table caption {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #457b9d;
+    font-size: 1.1rem;
+}
+
+.trip-table th, .trip-table td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.trip-table th {
+    background-color: #1d3557;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.trip-table tr:hover {
+    background-color: #f1faee;
+}/* --- Contact Page Layout & Styling --- */
+.contact-main {
+    background-color: #f9f9f9;
+    padding-bottom: 5rem;
+}
+
+.contact-hero {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+    color: #a8dadc;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.info-map-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
+}
+
+.company-info h2, .map-box h2, .team-section h2, .form-section h2 {
+    color: #1d3557;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.company-info p {
+    margin-bottom: 0.8rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.map-box iframe {
+    border-radius: 6px;
+}
+
+/* --- Team Grid Layout --- */
+.team-section {
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.employee-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.employee-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.employee-card h3 {
+    color: #1d3557;
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.employee-card .role {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* --- Contact Form Styling --- */
+.form-section {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    color: #1d3557;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.submit-btn {
+    background-color: #e63946;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #d90429;
+}

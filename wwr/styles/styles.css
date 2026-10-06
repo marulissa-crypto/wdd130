@@ -1,0 +1,149 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Body Styles */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+/* Header & Top Navigation Line */
+header {
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #4A86A3;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Heading Matching Course Example */
+.main-title {
+    font-family: Georgia, serif;
+    font-size: 2.3rem;
+    color: #4A86A3;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.main-title span {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #333333;
+    margin-left: 6px;
+}
+
+/* Side-by-Side Intro Container */
+.intro-box {
+    overflow: auto;
+    margin-bottom: 2rem;
+}
+
+/* Profile Image Floated Right - Set to 110px for a compact look */
+.profile-img {
+    float: right;
+    width: 110px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d1d1;
+    padding: 3px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.intro-p {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: #222222;
+}
+
+/* Aside Container & Overlay Setup */
+aside {
+    clear: both;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+aside h2 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1.5rem 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 2px;
+}
+
+/* Temple List Styles */
+ul.box {
+    list-style-position: inside;
+    font-family: Arial, sans-serif;
+}
+
+ul.box li {
+    margin-bottom: 8px;
+}
+
+ul.box a {
+    color: #4A86A3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.box a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666666;
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 12px;
+    margin-top: 30px;
+}
